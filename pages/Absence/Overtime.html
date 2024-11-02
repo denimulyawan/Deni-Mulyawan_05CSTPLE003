@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistem Informasi Management</title>
+  <link rel="icon" href="../../dist/img/Unpam.png" type="image/x-icon">
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../../index.html" class="nav-link">Home</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+  <style>
+    .main-sidebar {
+        background-color: #2908ff !important; /* Pastikan latar belakang putih */
+        color: rgb(255, 255, 255) !important; /* Pastikan teks berwarna hitam */
+    }
+
+    .main-sidebar a {
+        color: rgb(255, 255, 255) !important; /* Pastikan tautan berwarna biru */
+    }
+
+    .elevation-4 {
+        box-shadow: none !important; /* Pastikan tidak ada bayangan */
+    }
+</style>
+
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="../../index.html" class="brand-link">
+      <img src="../../dist/img/Unpam.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Pamulang University</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../../dist/img/Deni.jpeg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Deni Mulyawan</a>
+        </div>
+      </div>
+ 
+     <!-- Sidebar Menu -->
+     <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <li class="nav-item">
+          <a href="../../index.html" class="nav-link">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <p>Dashboard</p>
+          </a>
+        </li>
+        <li class="nav-header">Menu</li>
+        <li class="nav-item">
+          <a href="../forms/Employee.html" class="nav-link">
+            <span class="info-box-icon elevation-1"><i class="fas fa-users"></i></span>
+            <p>Employee</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="../forms/Position.html" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+              <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+              <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+            </svg>
+            <p>Position</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="../forms/Division.html" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+              <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+              <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+            </svg>
+            <p>Division</p>
+          </a>
+        </li>
+        <li class="nav-header">Attendance menu</li>
+        <li class="nav-item">
+          <a href="../Absence/Absence.html" class="nav-link">
+            <span class="info-box-icon"><i class="far fa-calendar-alt"></i></span>
+            <p>Absence</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="../Absence/Permission.html" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar2-plus" viewBox="0 0 16 16">
+              <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"/>
+              <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5zM8 8a.5.5 0 0 1 .5.5V10H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V11H6a.5.5 0 0 1 0-1h1.5V8.5A.5.5 0 0 1 8 8"/>
+            </svg>
+            <p>Permission</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="../forms/form.html" class="nav-link">
+            <span class="info-box-icon elevation-1"><i class="fas fa-users"></i></span>
+            <p>Form</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="../Absence/read-mail.html" class="nav-link active">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar2-plus" viewBox="0 0 16 16">
+              <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"/>
+              <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5zM8 8a.5.5 0 0 1 .5.5V10H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V11H6a.5.5 0 0 1 0-1h1.5V8.5A.5.5 0 0 1 8 8"/>
+            </svg>
+            <p>Overtime</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Overtime</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-10">
+            <!-- Form for adding new data -->
+            <div class="row mb-3">
+                <div class="col-md-12 mt-2">
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#addDataModal">Add Data</button>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">Overtime</h3>
+
+                    <div class="card-tools">
+                      <div class="input-group input-group-sm" style="width: 150px;">
+                        
+
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body table-responsive p-0">
+                    <table class="table table-hover text-nowrap">
+                      <thead>
+                        <tr>
+                          <th>Number</th>
+                          <th>Name Employee</th>
+                          <th>Date</th>
+                          <th>Time (Start - End)</th>
+                          <th>Reason</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Azka Hudori</td>
+                          <td>20 Februari 2024</td>
+                          <td>06:00:31 - 17:20:20</td>
+                          <td>Troubleshooting</td>
+                          <td><button class="btn btn-warning btn-sm" onclick="toggleColor(this)">Confirmation</button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+              </div>
+            </div>
+            
+            <!-- /.card -->
+            <!-- general form elements disabled -->
+            <div class="">
+              <div class="">
+                <h3 class="card-title"> </h3>
+              </div>
+              <!-- /.card-header -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!--/.col (right) -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  
+  <!-- Modal untuk Menambahkan Data -->
+  <div class="modal fade" id="addDataModal" tabindex="-1" aria-labelledby="addDataModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="addDataModalLabel">Add Data Employee</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <div class="mb-3">
+                      <label for="NameEmployee" class="form-label">Name Employee</label>
+                      <input type="text" class="form-control" id="NameEmployee" placeholder="Input Name Employee" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="Date" class="form-label">Date</label>
+                      <input type="date" class="form-control" id="Date" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="jamMulai" class="form-label">Overtime Start</label>
+                      <input type="text" class="form-control" id="jamMulai" placeholder="Time Start(HH:MM:SS)" required pattern="\d{2}:\d{2}:\d{2}">
+                  </div>
+                  <div class="mb-3">
+                      <label for="jamBerakhir" class="form-label">Overtime End</label>
+                      <input type="text" class="form-control" id="jamBerakhir" placeholder="Time End(HH:MM:SS)" required pattern="\d{2}:\d{2}:\d{2}">
+                  </div>
+                  <div class="mb-3">
+                      <label for="keperluan" class="form-label">Reason</label>
+                      <input type="text" class="form-control" id="keperluan" placeholder="Input Reason" required>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" onclick="addRow()">Add Data</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.2.0
+    </div>
+    <strong>Deni Mulyawan &copy; 2024 <a href="http://tiny.cc/7b2tzz">Pamulang University</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+<script>
+  function toggleColor(button) {
+      if (button.classList.contains("btn-success")) {
+          button.classList.remove("btn-success");
+          button.classList.add("btn-danger");
+          button.innerText = "Tolak"; // Ubah teks saat tombol merah
+      } else if (button.classList.contains("btn-danger")) {
+          button.classList.remove("btn-danger");
+          button.classList.add("btn-warning");
+          button.innerText = "Confirmation"; // Ubah teks saat tombol kuning
+      } else {
+          button.classList.remove("btn-warning");
+          button.classList.add("btn-success");
+          button.innerText = "Terima"; // Ubah teks saat tombol biru
+      }
+  }
+
+  function addRow() {
+      // Ambil nilai dari input
+      const Name = document.getElementById('NameEmployee').value;
+      const Date = document.getElementById('Date').value;
+      const jamMulai = document.getElementById('jamMulai').value;
+      const jamBerakhir = document.getElementById('jamBerakhir').value;
+      const keperluan = document.getElementById('keperluan').value;
+
+      // Validasi semua field harus diisi
+      if (!Name || !Date || !jamMulai || !jamBerakhir || !keperluan) {
+          alert('Semua field harus diisi.');
+          return;
+      }
+
+      // Validasi format jam (HH:MM:SS)
+      const jamPattern = /^\d{2}:\d{2}:\d{2}$/;
+      if (!jamPattern.test(jamMulai) || !jamPattern.test(jamBerakhir)) {
+          alert('Format jam tidak valid. Harus dalam format HH:MM:SS.');
+          return;
+      }
+
+      // Dapatkan referensi tabel dan tbody
+      const table = document.querySelector('.table tbody');
+
+      // Hitung Number urut
+      const rowCount = table.rows.length + 1;
+
+      // Buat baris baru
+      const newRow = table.insertRow();
+
+      // Tambahkan sel ke baris baru
+      newRow.innerHTML = `
+          <td>${rowCount}</td>
+          <td>${Name}</td>
+          <td>${Date}</td>
+          <td>${jamMulai} - ${jamBerakhir}</td>
+          <td>${keperluan}</td>
+          <td><button class="btn btn-warning btn-sm" onclick="toggleColor(this)">Confirmation</button></td>
+      `;
+
+      // Kosongkan input setelah menambah data
+      document.getElementById('NameEmployee').value = '';
+      document.getElementById('Date').value = '';
+      document.getElementById('jamMulai').value = '';
+      document.getElementById('jamBerakhir').value = '';
+      document.getElementById('keperluan').value = '';
+
+      // Close modal
+      $('#addDataModal').modal('hide');
+  }
+</script>
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- bs-custom-file-input -->
+<script src="../../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<!-- Page specific script -->
+<script>
+$(function () {
+  bsCustomFileInput.init();
+});
+</script>
+</body>
+</html>
